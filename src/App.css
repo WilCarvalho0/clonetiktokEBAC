@@ -21,6 +21,38 @@ html {
   position: relative;
 }
 
+.app__video {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.app__video-thumbnail {
+  width: 40%;
+  flex-shrink: 0;
+  margin-right: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.app__video-info {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.app__video-likes {
+  margin-bottom: 5px;
+}
+
+.app__video-description {
+  margin-bottom: 5px;
+}
+
+.app__video-shares {
+  margin-bottom: 0;
+}
+
 .app__videos::-webkit-scrollbar {
   display: none;
 }
