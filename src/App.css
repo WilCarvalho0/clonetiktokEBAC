@@ -1,18 +1,16 @@
-html{
+html {
   scroll-snap-type: y mandatory;
 }
 
-
-
-.App{
+.App {
   background-color: black;
-  height: 100vh;
+  height: 896px;
   display: grid;
   place-items: center;
 }
 
-.app__videos{
-  height: 100vh;
+.app__videos {
+  height: 896px;
   max-height: 800px;
   width: 80%;
   max-width: 500px;
@@ -25,4 +23,15 @@ html{
 
 .app__videos::-webkit-scrollbar {
   display: none;
+}
+
+@media only screen and (max-width: 414px) {
+  .App {
+    height: auto;
+  }
+
+  .app__videos {
+    width: 100%;
+    height: auto;
+  }
 }
